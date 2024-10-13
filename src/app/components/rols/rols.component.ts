@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-rols',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './rols.component.html',
   styleUrl: './rols.component.css'
 })
@@ -14,6 +15,8 @@ export class RolsComponent {
 
     version: number =18;
     isActive:boolean=false;
-    current:Date=new Date();
+    currentDate:Date=new Date();
+    inputType:string ="button";
+    selectedState:string='';
     
 }

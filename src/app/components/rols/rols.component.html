@@ -7,26 +7,27 @@
         <p>{{version}}</p>
     </div>
     <div class="col-3">
-        <p>{{angularVersion}}</p>
+        <p>{{currentDate}}</p>
     </div>
-    <div class="mb-3">
-        <label for="formFile" class="form-label">Default file input example</label>
-        <input class="form-control" type="file" id="formFile">
+    <div class="col-3">
+      <p>{{selectedState}}</p>
+  </div>
+    <div class="row">
+      <div class="col-3">
+        <input type="text" [value]="firstName" class="form-control"/>
       </div>
-      <div class="mb-3">
-        <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-        <input class="form-control" type="file" id="formFileMultiple" multiple>
+      <div class="col-3">
+        <input [type]="inputType"/>
       </div>
-      <div class="mb-3">
-        <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-        <input class="form-control" type="file" id="formFileDisabled" disabled>
+      <div class="col-3">
+        <input type="text" [(ngModel)]="firstName">
       </div>
-      <div class="mb-3">
-        <label for="formFileSm" class="form-label">Small file input example</label>
-        <input class="form-control form-control-sm" id="formFileSm" type="file">
+      <div class="col-3">
+        <select [(ngModel)]="selectedState">
+          <option value="MG">mg</option>
+          <option value="Mh">mh</option>
+          <option value="MP">mp</option>
+        </select>
       </div>
-      <div>
-        <label for="formFileLg" class="form-label">Large file input example</label>
-        <input class="form-control form-control-lg" id="formFileLg" type="file">
-      </div>
+    </div>
 </div>
