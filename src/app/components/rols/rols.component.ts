@@ -18,5 +18,12 @@ export class RolsComponent {
     currentDate:Date=new Date();
     inputType:string ="button";
     selectedState:string='';
+
+    showWelcomeAlert (){
+      alert("welcome to Angular 18")
+    }
     
+    showMessage(message: string){
+      alert(message)
+    }
 }
