@@ -1,0 +1,7 @@
+***********Angular 18 Tutorial With Project************
+
+Setup & Installation
+
+Data Binding => intepolation {{}},propertyBinding [],two way data binding[(ngModel)],event Binding
+
+Directive =>

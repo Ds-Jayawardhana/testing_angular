@@ -13,7 +13,7 @@ export class RolsComponent {
     firstName:string ="Angular Tutorial";
     angularVersion ="Version 18";
 
-    version: number =18;
+    version: number =18;//Can use for Interpolation
     isActive:boolean=false;
     currentDate:Date=new Date();
     inputType:string ="button";
